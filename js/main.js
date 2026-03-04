@@ -77,8 +77,12 @@ document.querySelectorAll(".lead-form").forEach((form) => {
       return;
     }
 
-    // Aqui futuramente entra integração com backend
-
     window.location.href = "obrigado.html";
   });
 });
+
+const year = document.getElementById("year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

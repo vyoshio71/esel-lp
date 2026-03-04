@@ -541,3 +541,40 @@ h3 {
     padding: 30px;
   }
 }
+
+/* =============================
+   THANK YOU PAGE
+============================= */
+
+.thankyou {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.thankyou__content {
+  max-width: 650px;
+}
+
+.thankyou h1 {
+  color: var(--primary);
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.thankyou p {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.thankyou__extra {
+  margin-top: 10px;
+  color: #666;
+}
+
+.thankyou .btn {
+  margin-top: 15px;
+}
