@@ -1,0 +1,543 @@
+:root {
+  --primary: #0f2a4d;
+  --accent: #f58220;
+  --light: #ffffff;
+  --gray: #f5f5f5;
+  --text: #333;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =============================
+   HEADER
+============================= */
+
+.header {
+  background: var(--light);
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* =============================
+   BOTÕES
+============================= */
+
+.btn {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.btn--outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: white;
+}
+
+.btn--accent {
+  background: var(--accent);
+  color: white;
+}
+
+.btn--full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* =============================
+   HERO
+============================= */
+
+.hero {
+  padding: 90px 0 70px;
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__text h1 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: var(--primary);
+  max-width: 620px;
+}
+
+.hero__subtitle {
+  margin-bottom: 24px;
+  font-size: 17px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.hero__image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* =============================
+   SEÇÕES (RITMO VISUAL)
+============================= */
+
+.benefits,
+.products,
+.regions {
+  padding: 90px 0;
+}
+
+.structure,
+.private-label,
+.form-section {
+  padding: 110px 0;
+}
+
+/* =============================
+   BENEFÍCIOS
+============================= */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin: 18px 0 12px;
+  color: var(--primary);
+}
+
+/* =============================
+   ESTRUTURA INDUSTRIAL
+============================= */
+
+.structure {
+  background: #ffffff;
+}
+
+.structure__content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.structure__text {
+  flex: 1;
+}
+
+.structure__text h2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  color: var(--primary);
+}
+
+.structure__text p {
+  margin-bottom: 24px;
+}
+
+.structure__list {
+  list-style: none;
+}
+
+.structure__list li {
+  margin-bottom: 12px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.structure__list li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+
+.structure__images {
+  flex: 1;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.structure__images img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.structure__images img:first-child {
+  grid-column: span 2;
+}
+
+/* =============================
+   FORMULÁRIOS
+============================= */
+
+.form-section {
+  background: var(--gray);
+}
+
+.form-section--final {
+  background: #ffffff;
+}
+
+.lead-form {
+  max-width: 600px;
+  margin: 50px auto 0;
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* =============================
+   PRODUTOS
+============================= */
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.product-card {
+  background: var(--gray);
+  padding: 28px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.products__cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* =============================
+   MARCA PRÓPRIA
+============================= */
+
+.private-label {
+  background: var(--primary);
+  color: white;
+}
+
+.private-label__content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.private-label__text h2 {
+  margin-bottom: 24px;
+  font-size: 30px;
+}
+
+.private-label__text p {
+  margin-bottom: 24px;
+}
+
+.private-label__list {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.private-label__list li {
+  margin-bottom: 12px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.private-label__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* =============================
+   REGIÕES
+============================= */
+
+.regions__content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.regions__cities ul {
+  list-style: none;
+  columns: 2;
+  margin-top: 20px;
+}
+
+.regions__cities li {
+  margin-bottom: 8px;
+}
+
+.regions__cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 70px 0 25px;
+}
+
+.footer__content {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer__col h3,
+.footer__col h4 {
+  margin-bottom: 18px;
+}
+
+.footer__col p,
+.footer__col li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer__col ul {
+  list-style: none;
+}
+
+.footer__col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__bottom {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 18px;
+}
+
+/* =============================
+   BOTÃO FIXO MOBILE
+============================= */
+
+.mobile-cta {
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* =============================
+   RESPONSIVIDADE MOBILE
+============================= */
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 75px;
+  }
+
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    z-index: 9999;
+  }
+
+  .header .btn {
+    display: none;
+  }
+
+  .header__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__text h1 {
+    font-size: 24px;
+  }
+
+  .hero__image img {
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  .benefits,
+  .structure,
+  .products,
+  .private-label,
+  .regions,
+  .form-section {
+    padding: 60px 0;
+  }
+
+  .benefits__grid,
+  .products__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .structure__content {
+    flex-direction: column;
+  }
+
+  .structure__images {
+    grid-template-columns: 1fr;
+  }
+
+  .regions__cities ul {
+    columns: 1;
+  }
+
+  .lead-form {
+    padding: 30px;
+  }
+}
