@@ -2,14 +2,34 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" as="image" href="assets/images/hero-fabrica.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esel | Indústria de Mangueiras em Londrina</title>
+    <link rel="canonical" href="https://seudominio.com.br/" />
+    <meta name="robots" content="index, follow" />
+    <title>Esel Mangueiras | Indústria de Mangueiras em Londrina PR</title>
     <meta
       name="description"
-      content="Indústria de mangueiras em Londrina com produção própria, fornecimento regional e possibilidade de marca própria para empresas e profissionais."
+      content="Indústria de mangueiras em Londrina PR com produção própria. Fornecimento para empresas, revendedores e profissionais em toda região norte do Paraná."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Esel Mangueiras",
+        "telephone": "+55 43 99674-0504",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Londrina",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -19,9 +39,13 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container header__content">
-        <div class="logo">
-          <img src="assets/images/logo.jpg" alt="ESEL" class="hero__logo" />
-        </div>
+        <a href="/" class="logo">
+          <img
+            src="assets/images/logo.jpg"
+            alt="Esel Indústria de Mangueiras"
+            class="hero__logo"
+          />
+        </a>
 
         <nav class="nav">
           <a href="#estrutura">Estrutura</a>
@@ -34,389 +58,462 @@
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__content">
-        <div class="hero__text">
-          <h1>
-            Indústria de Mangueiras em Londrina<br />
-            Fornecimento Estruturado para Empresas da Região
-          </h1>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__content">
+          <div class="hero__text">
+            <h1>
+              Indústria de Mangueiras em Londrina <br />
+              Fornecimento para Empresas, Revendedores e Profissionais da Região
+            </h1>
 
-          <p class="hero__subtitle">
-            Produção própria, linha padronizada e modelo comercial voltado ao
-            abastecimento regional com regularidade e padrão técnico.
-          </p>
-
-          <div class="hero__actions">
-            <a href="#formulario" class="btn btn--primary">
-              Solicitar Tabela e Condições Comerciais
-            </a>
-            <a href="https://wa.me/5543996740504" class="btn btn--outline"
-              >Falar com o Comercial</a
-            >
-          </div>
-
-          <small class="hero__micro">
-            Atendimento comercial especializado para empresas da região.
-          </small>
-        </div>
-
-        <div class="hero__image">
-          <img
-            src="assets/images/hero-fabrica.jpg"
-            alt="Fábrica Esel em Londrina"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFÍCIOS -->
-    <section class="benefits">
-      <div class="container">
-        <div class="section-header">
-          <h2>Por que Trabalhar com a Esel?</h2>
-          <p>
-            Estrutura industrial voltada para abastecimento regional com padrão
-            e regularidade.
-          </p>
-        </div>
-
-        <div class="benefits__grid">
-          <div class="card">
-            <img src="assets/icons/factory.svg" alt="" />
-            <h3>Compra Direto da Fábrica</h3>
-            <p>Negociação direta com a indústria, eliminando intermediários.</p>
-          </div>
-
-          <div class="card">
-            <img src="assets/icons/profit.svg" alt="" />
-            <h3>Modelo Comercial Competitivo</h3>
-            <p>
-              Modelo comercial estruturado para empresas e profissionais do
-              setor.
+            <p class="hero__subtitle">
+              Produção própria e linha completa de mangueiras para aplicações
+              industriais, agrícolas, elétricas e de construção.
             </p>
+
+            <div class="hero__actions">
+              <a href="#formulario" class="btn btn--primary">
+                Solicitar Informações
+              </a>
+
+              <a
+                href="https://wa.me/5543996740504?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20informações"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--outline"
+              >
+                Falar com o Comercial
+              </a>
+            </div>
+
+            <small class="hero__micro">
+              Atendimento comercial especializado para empresas da região.
+            </small>
           </div>
 
-          <div class="card">
-            <img src="assets/icons/box.svg" alt="" />
-            <h3>Linha Completa Padronizada</h3>
-            <p>
-              Produtos organizados por aplicação, facilitando reposição e
-              estoque.
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/icons/tag.svg" alt="" />
-            <h3>Produção com Marca Própria</h3>
-            <p>
-              Possibilidade de personalização para empresas que desejam
-              trabalhar com marca própria.
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/icons/truck.svg" alt="" />
-            <h3>Entrega Regional Ágil</h3>
-            <p>Atendimento estratégico em até 300 km a partir de Londrina.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ESTRUTURA INDUSTRIAL -->
-    <section id="estrutura" class="structure">
-      <div class="container structure__content">
-        <div class="structure__text">
-          <h2>Produção Própria com Controle de Qualidade</h2>
-
-          <p>
-            A Esel atua com estrutura fabril própria em Londrina, garantindo
-            padronização, controle técnico e regularidade no fornecimento para
-            empresas e profissionais da região.
-          </p>
-
-          <ul class="structure__list">
-            <li>Processo produtivo interno</li>
-            <li>Matéria-prima selecionada</li>
-            <li>Controle técnico de qualidade</li>
-            <li>Capacidade produtiva regional</li>
-          </ul>
-        </div>
-
-        <div class="structure__images">
-          <img
-            src="assets/images/estrutura-1.jpg"
-            alt="Processo produtivo da Esel"
-          />
-          <img
-            src="assets/images/estrutura-2.jpg"
-            alt="Estrutura fabril Esel"
-          />
-          <img
-            src="assets/images/estrutura-3.jpg"
-            alt="Controle de qualidade Esel"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMULÁRIO PRINCIPAL -->
-    <section id="formulario" class="form-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Solicite Informações Comerciais</h2>
-          <p>
-            Preencha os dados abaixo para receber informações comerciais e
-            condições de fornecimento.
-          </p>
-        </div>
-
-        <form id="leadForm" class="lead-form">
-          <div class="form-group">
-            <label for="empresa">Nome da Empresa</label>
-            <input type="text" id="empresa" name="empresa" required />
-          </div>
-
-          <div class="form-group">
-            <label for="cnpj-principal">CNPJ</label>
-            <input
-              type="text"
-              id="cnpj-principal"
-              name="cnpj"
-              class="cnpj-field"
-              required
+          <div class="hero__image">
+            <img
+              src="assets/images/hero-fabrica.jpg"
+              alt="Fábrica Esel em Londrina"
             />
           </div>
-
-          <div class="form-group">
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade" required />
-          </div>
-
-          <div class="form-group">
-            <label for="segmento">Segmento</label>
-            <select id="segmento" name="segmento" required>
-              <option value="">Selecione</option>
-              <option>Loja de Material de Construção</option>
-              <option>Casa Agrícola</option>
-              <option>Loja de Material Elétrico</option>
-              <option>Distribuidor Regional</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="telefone-principal">Telefone / WhatsApp</label>
-            <input
-              type="text"
-              id="telefone-principal"
-              class="phone-field"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="volume">Volume estimado mensal</label>
-            <input
-              type="text"
-              id="volume"
-              name="volume"
-              placeholder="Ex: R$ 5.000 - R$ 10.000"
-              required
-            />
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full">
-            Solicitar Tabela e Condições Comerciais
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- PRODUTOS -->
-    <section id="produtos" class="products">
-      <div class="container">
-        <div class="section-header">
-          <h2>Linha Completa para Diferentes Segmentos</h2>
-          <p>
-            Produtos organizados por aplicação para facilitar reposição e
-            padronização no abastecimento.
-          </p>
         </div>
+      </section>
 
-        <div class="products__grid">
-          <div class="product-card">
-            <h3>Linha Construção</h3>
+      <!-- SEO -->
+      <section class="seo-block">
+        <h2>Indústria de Mangueiras em Londrina com Atendimento Regional</h2>
+
+        <p>
+          A Esel atende empresas, distribuidores e profissionais em diversas
+          cidades da região norte do Paraná.
+        </p>
+      </section>
+
+      <!-- BENEFÍCIOS -->
+      <section class="benefits">
+        <div class="container">
+          <div class="section-header">
+            <h2>Por que escolher a Esel?</h2>
             <p>
-              Mangueiras indicadas para uso em obras, reformas e aplicações
-              gerais.
+              Estrutura industrial voltada para abastecimento regional com
+              padrão e regularidade.
             </p>
           </div>
 
-          <div class="product-card">
-            <h3>Linha Agrícola</h3>
+          <div class="benefits__grid">
+            <div class="card">
+              <iconify-icon icon="mdi:factory" class="card-icon"></iconify-icon>
+
+              <h3>Compra Direto da Fábrica</h3>
+              <p>
+                Negociação direta com a indústria, eliminando intermediários.
+              </p>
+            </div>
+
+            <div class="card">
+              <iconify-icon
+                icon="mdi:handshake-outline"
+                class="card-icon"
+              ></iconify-icon>
+
+              <h3>Modelo Comercial Competitivo</h3>
+              <p>
+                Modelo comercial estruturado para empresas e profissionais do
+                setor.
+              </p>
+            </div>
+
+            <div class="card">
+              <iconify-icon
+                icon="mdi:package-variant-closed"
+                class="card-icon"
+              ></iconify-icon>
+
+              <h3>Linha Completa Padronizada</h3>
+              <p>
+                Produtos organizados por aplicação, facilitando reposição e
+                estoque.
+              </p>
+            </div>
+
+            <div class="card">
+              <iconify-icon
+                icon="mdi:tag-outline"
+                class="card-icon"
+              ></iconify-icon>
+
+              <h3>Produção com Marca Própria</h3>
+              <p>
+                Possibilidade de personalização para empresas que desejam
+                trabalhar com marca própria.
+              </p>
+            </div>
+
+            <div class="card">
+              <iconify-icon
+                icon="mdi:truck-delivery-outline"
+                class="card-icon"
+              ></iconify-icon>
+
+              <h3>Entrega Regional Ágil</h3>
+              <p>Atendimento estratégico em até 300 km a partir de Londrina.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESTRUTURA INDUSTRIAL -->
+      <section id="estrutura" class="structure">
+        <div class="container structure__content">
+          <div class="structure__text">
+            <h2>Produção Própria com Controle de Qualidade</h2>
+
             <p>
-              Produtos desenvolvidos para aplicações rurais e sistemas de
-              irrigação.
+              A Esel atua com estrutura fabril própria em Londrina, garantindo
+              padronização, controle técnico e regularidade no fornecimento para
+              empresas e profissionais da região.
             </p>
-          </div>
 
-          <div class="product-card">
-            <h3>Linha Elétrica</h3>
-            <p>
-              Modelos específicos para instalações elétricas e proteção técnica.
-            </p>
-          </div>
-
-          <div class="product-card">
-            <h3>Linha Industrial</h3>
-            <p>Soluções voltadas para demandas técnicas e uso profissional.</p>
-          </div>
-
-          <div class="product-card">
-            <h3>Linha Sob Medida</h3>
-            <p>
-              Produção personalizada conforme necessidade específica do cliente.
-            </p>
-          </div>
-        </div>
-
-        <div class="products__cta">
-          <a href="#formulario" class="btn btn--primary">
-            Solicitar Tabela Completa
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MARCA PRÓPRIA -->
-    <section id="marca" class="private-label">
-      <div class="container private-label__content">
-        <div class="private-label__text">
-          <h2>Produção com a Marca da Sua Loja</h2>
-
-          <p>
-            A Esel oferece a possibilidade de produção personalizada para
-            empresas que desejam trabalhar com marca própria, mantendo padrão
-            técnico e controle de qualidade.
-          </p>
-
-          <ul class="private-label__list">
-            <li>Quantidade mínima de produção definida</li>
-            <li>Processo de aprovação técnica</li>
-            <li>Prazo médio de fabricação</li>
-            <li>Controle de qualidade industrial</li>
-            <li>Embalagem personalizada</li>
-          </ul>
-
-          <a href="#formulario" class="btn btn--accent">
-            Solicitar Informações sobre Marca Própria
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- REGIÕES ATENDIDAS -->
-    <section id="regioes" class="regions">
-      <div class="container">
-        <div class="section-header">
-          <h2>Atendimento Regional Estratégico</h2>
-          <p>
-            Base em Londrina com fornecimento para cidades em até 300 km de
-            distância.
-          </p>
-        </div>
-
-        <div class="regions__content">
-          <div class="regions__cities">
-            <h3>Principais cidades atendidas:</h3>
-            <ul>
-              <li>Londrina</li>
-              <li>Maringá</li>
-              <li>Apucarana</li>
-              <li>Arapongas</li>
-              <li>Cambé</li>
-              <li>Cornélio Procópio</li>
-              <li>Ibiporã</li>
-              <li>Rolândia</li>
+            <ul class="structure__list">
+              <li>Processo produtivo interno</li>
+              <li>Matéria-prima selecionada</li>
+              <li>Controle técnico de qualidade</li>
+              <li>Capacidade produtiva regional</li>
             </ul>
           </div>
-        </div>
 
-        <div class="regions__cta">
-          <a href="#formulario" class="btn btn--primary">
-            Verificar Condições para Minha Região
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMULÁRIO FINAL -->
-    <section class="form-section form-section--final">
-      <div class="container">
-        <div class="section-header">
-          <h2>Solicite Informações Comerciais</h2>
-          <p>
-            Preencha os dados abaixo e receba informações comerciais e condições
-            de fornecimento.
-          </p>
-        </div>
-
-        <form class="lead-form">
-          <div class="form-group">
-            <label>Nome da Empresa</label>
-            <input type="text" required />
-          </div>
-
-          <div class="form-group">
-            <label for="cnpj-final">CNPJ</label>
-            <input
-              type="text"
-              id="cnpj-final"
-              name="cnpj"
-              class="cnpj-field"
-              required
+          <div class="structure__images">
+            <img
+              src="assets/images/estrutura-1.jpg"
+              alt="Processo produtivo da Esel"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/estrutura-2.jpg"
+              alt="Estrutura fabril Esel"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/estrutura-3.jpg"
+              alt="Controle de qualidade Esel"
+              loading="lazy"
             />
           </div>
+        </div>
+      </section>
 
-          <div class="form-group">
-            <label>Cidade</label>
-            <input type="text" required />
+      <!-- FORMULÁRIO PRINCIPAL -->
+      <section id="formulario" class="form-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Solicite Informações Comerciais</h2>
+            <p>
+              Preencha os dados abaixo para receber informações comerciais e
+              condições de fornecimento.
+            </p>
           </div>
 
-          <div class="form-group">
-            <label>Segmento</label>
-            <select required>
-              <option value="">Selecione</option>
-              <option>Loja de Material de Construção</option>
-              <option>Casa Agrícola</option>
-              <option>Loja de Material Elétrico</option>
-              <option>Distribuidor Regional</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="telefone-final">Telefone / WhatsApp</label>
+          <form
+            id="leadForm"
+            name="lead-form"
+            class="lead-form"
+            action="https://formsubmit.co/Esel@sercomtel.com.br"
+            method="POST"
+          >
             <input
-              type="text"
-              id="telefone-final"
-              class="phone-field"
-              required
+              type="hidden"
+              name="_next"
+              value="https://seudominio.com.br/obrigado.html"
             />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="form-group">
+              <label for="empresa">Nome da Empresa</label>
+              <input type="text" id="empresa" name="empresa" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cnpj-principal">CNPJ (se empresa)</label>
+              <input
+                type="text"
+                id="cnpj-principal"
+                name="cnpj"
+                class="cnpj-field"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" required />
+            </div>
+
+            <div class="form-group">
+              <label for="segmento">Segmento</label>
+              <select id="segmento" name="segmento" required>
+                <option value="">Selecione</option>
+                <option>Loja de Material de Construção</option>
+                <option>Casa Agrícola</option>
+                <option>Loja de Material Elétrico</option>
+                <option>Distribuidor Regional</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone-principal">Telefone / WhatsApp</label>
+              <input
+                type="tel"
+                id="telefone-principal"
+                name="telefone"
+                class="phone-field"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="volume">Volume estimado (opcional)</label>
+              <input
+                type="text"
+                id="volume"
+                name="volume"
+                placeholder="Ex: R$ 5.000 - R$ 10.000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">O que você precisa?</label>
+              <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Solicitar Tabela e Condições Comerciais
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section id="produtos" class="products">
+        <div class="container">
+          <div class="section-header">
+            <h2>Linha Completa para Diferentes Segmentos</h2>
+            <p>
+              Produtos organizados por aplicação para facilitar reposição e
+              padronização no abastecimento.
+            </p>
           </div>
 
-          <div class="form-group">
-            <label>Volume estimado mensal</label>
-            <input type="text" required />
+          <div class="products__grid">
+            <div class="product-card">
+              <h3>Linha Construção</h3>
+              <p>
+                Mangueiras indicadas para uso em obras, reformas e aplicações
+                gerais.
+              </p>
+            </div>
+
+            <div class="product-card">
+              <h3>Linha Agrícola</h3>
+              <p>
+                Produtos desenvolvidos para aplicações rurais e sistemas de
+                irrigação.
+              </p>
+            </div>
+
+            <div class="product-card">
+              <h3>Linha Elétrica</h3>
+              <p>
+                Modelos específicos para instalações elétricas e proteção
+                técnica.
+              </p>
+            </div>
+
+            <div class="product-card">
+              <h3>Linha Industrial</h3>
+              <p>
+                Soluções voltadas para demandas técnicas e uso profissional.
+              </p>
+            </div>
+
+            <div class="product-card">
+              <h3>Linha Sob Medida</h3>
+              <p>
+                Produção personalizada conforme necessidade específica do
+                cliente.
+              </p>
+            </div>
           </div>
 
-          <button type="submit" class="btn btn--primary btn--full">
-            Solicitar Informações Comerciais
-          </button>
-        </form>
-      </div>
-    </section>
+          <div class="products__cta">
+            <a href="#formulario" class="btn btn--primary">
+              Solicitar Tabela Completa
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARCA PRÓPRIA -->
+      <section id="marca" class="private-label">
+        <div class="container private-label__content">
+          <div class="private-label__text">
+            <h2>Produção com a Marca da Sua Loja</h2>
+
+            <p>
+              A Esel oferece a possibilidade de produção personalizada para
+              empresas que desejam trabalhar com marca própria, mantendo padrão
+              técnico e controle de qualidade.
+            </p>
+
+            <ul class="private-label__list">
+              <li>Quantidade mínima de produção definida</li>
+              <li>Processo de aprovação técnica</li>
+              <li>Prazo médio de fabricação</li>
+              <li>Controle de qualidade industrial</li>
+              <li>Embalagem personalizada</li>
+            </ul>
+
+            <a href="#formulario" class="btn btn--accent">
+              Solicitar Informações sobre Marca Própria
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGIÕES ATENDIDAS -->
+      <section id="regioes" class="regions">
+        <div class="container">
+          <div class="section-header">
+            <h2>Atendimento Regional Estratégico</h2>
+            <p>
+              Base em Londrina com fornecimento para cidades em até 300 km de
+              distância.
+            </p>
+          </div>
+
+          <div class="regions__content">
+            <div class="regions__cities">
+              <h3>Principais cidades atendidas:</h3>
+              <ul>
+                <li>Londrina</li>
+                <li>Maringá</li>
+                <li>Apucarana</li>
+                <li>Arapongas</li>
+                <li>Cambé</li>
+                <li>Cornélio Procópio</li>
+                <li>Ibiporã</li>
+                <li>Rolândia</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="regions__cta">
+            <a href="#formulario" class="btn btn--primary">
+              Verificar Condições para Minha Região
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO FINAL -->
+      <section class="form-section form-section--final">
+        <div class="container">
+          <div class="section-header">
+            <h2>Solicite Informações Comerciais</h2>
+            <p>
+              Preencha os dados abaixo e receba informações comerciais e
+              condições de fornecimento.
+            </p>
+          </div>
+
+          <form
+            name="lead-form-final"
+            class="lead-form"
+            action="https://formsubmit.co/Esel@sercomtel.com.br"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://seudominio.com.br/obrigado.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="form-group">
+              <label for="empresa-final">Nome da Empresa</label>
+              <input type="text" id="empresa-final" name="empresa" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cnpj-final">CNPJ (se empresa)</label>
+              <input
+                type="text"
+                id="cnpj-final"
+                name="cnpj"
+                class="cnpj-field"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="cidade-final">Cidade</label>
+              <input type="text" id="cidade-final" name="cidade" required />
+            </div>
+
+            <div class="form-group">
+              <label for="segmento-final">Segmento</label>
+              <select id="segmento-final" name="segmento" required>
+                <option value="">Selecione</option>
+                <option>Loja de Material de Construção</option>
+                <option>Casa Agrícola</option>
+                <option>Loja de Material Elétrico</option>
+                <option>Distribuidor Regional</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone-final">Telefone / WhatsApp</label>
+              <input
+                type="tel"
+                id="telefone-final"
+                name="telefone"
+                class="phone-field"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Volume estimado (opcional)</label>
+              <input type="text" name="volume" />
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Solicitar Informações Comerciais
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -424,8 +521,8 @@
         <div class="footer__col">
           <h3>Esel Indústria e Comércio</h3>
           <p>
-            Indústria de mangueiras com produção própria em Londrina, atendendo
-            empresas e profissionais em até 300 km da região.
+            Indústria de mangueiras em Londrina PR com produção própria,
+            fornecendo para empresas e profissionais em todo o norte do Paraná.
           </p>
         </div>
 
