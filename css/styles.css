@@ -133,6 +133,12 @@ h3 {
   margin-bottom: 10px;
 }
 
+.hero__logo {
+  width: 200px;
+  height: 50px;
+  object-fit: cover;
+}
+
 .hero__image img {
   max-width: 100%;
   border-radius: 8px;
@@ -527,10 +533,6 @@ h3 {
 
   .structure__content {
     flex-direction: column;
-  }
-
-  .structure__images {
-    grid-template-columns: 1fr;
   }
 
   .regions__cities ul {
