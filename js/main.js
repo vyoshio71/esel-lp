@@ -15,25 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // =============================
-  // MÁSCARA CNPJ
-  // =============================
-  function maskCNPJ(value) {
-    return value
-      .replace(/\D/g, "")
-      .replace(/^(\d{2})(\d)/, "$1.$2")
-      .replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
-      .replace(/\.(\d{3})(\d)/, ".$1/$2")
-      .replace(/(\d{4})(\d)/, "$1-$2")
-      .slice(0, 18);
-  }
-
-  document.querySelectorAll(".cnpj-field").forEach((input) => {
-    input.addEventListener("input", (e) => {
-      e.target.value = maskCNPJ(e.target.value);
-    });
-  });
-
-  // =============================
   // MÁSCARA TELEFONE
   // =============================
   function maskPhone(value) {
@@ -51,32 +32,61 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // =============================
-  // VALIDAÇÃO SIMPLES CNPJ
-  // =============================
-  function isValidCNPJ(cnpj) {
-    cnpj = cnpj.replace(/[^\d]+/g, "");
-    if (cnpj.length !== 14) return false;
-    if (/^(\d)\1+$/.test(cnpj)) return false;
-    return true;
-  }
-
-  // =============================
-  // SUBMIT DOS FORMULÁRIOS
+  // SUBMIT DOS FORMULÁRIOS (AJAX + conversão)
   // =============================
   document.querySelectorAll(".lead-form").forEach((form) => {
     form.addEventListener("submit", function (e) {
-      const cnpj = form.querySelector(".cnpj-field")?.value || "";
+      e.preventDefault();
+
       const phone = form.querySelector(".phone-field")?.value || "";
 
-      if (cnpj && !isValidCNPJ(cnpj)) {
-        alert("Informe um CNPJ válido.");
-        return;
-      }
-
-      if (phone.length < 15) {
+      if (phone.length < 14) {
         alert("Informe um telefone válido.");
         return;
       }
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Enviando...";
+      }
+
+      const payload = {};
+      new FormData(form).forEach((value, key) => {
+        payload[key] = value;
+      });
+
+      fetch(form.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          const ok = data && (data.success === true || data.success === "true");
+          if (!ok) throw new Error("formsubmit_error");
+
+          const successEl =
+            form.parentElement.querySelector(".lead-form__success");
+          form.hidden = true;
+          if (successEl) {
+            successEl.hidden = false;
+            successEl.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        })
+        .catch(() => {
+          alert(
+            "Não foi possível enviar agora. Tente novamente em instantes ou fale com a gente pelo WhatsApp."
+          );
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+          }
+        });
     });
   });
 

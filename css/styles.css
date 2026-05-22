@@ -57,6 +57,21 @@ h2 {
   align-items: center;
 }
 
+.header__phone {
+  display: none;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.header__phone iconify-icon {
+  color: var(--accent);
+  font-size: 18px;
+}
+
 .nav a {
   margin: 0 14px;
   text-decoration: none;
@@ -126,6 +141,19 @@ h2 {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .hero__text h1 {
@@ -314,8 +342,28 @@ h2 {
   background: var(--gray);
 }
 
-.form-section--final {
-  background: #ffffff;
+.lead-form__success {
+  max-width: 600px;
+  margin: 50px auto 0;
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.lead-form__success h3 {
+  color: var(--primary);
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.lead-form__success p {
+  margin-bottom: 14px;
+}
+
+.lead-form__success .btn {
+  margin-top: 10px;
 }
 
 .lead-form {
@@ -394,8 +442,8 @@ h2 {
 ============================= */
 
 .private-label {
-  background: var(--primary);
-  color: white;
+  background: var(--gray);
+  color: var(--text);
 }
 
 .private-label__content {
@@ -406,6 +454,7 @@ h2 {
 .private-label__text h2 {
   margin-bottom: 24px;
   font-size: 30px;
+  color: var(--primary);
 }
 
 .private-label__text p {
@@ -452,6 +501,78 @@ h2 {
 .regions__cta {
   margin-top: 40px;
   text-align: center;
+}
+
+/* =============================
+   CTA FINAL
+============================= */
+
+.final-cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.final-cta__content {
+  max-width: 720px;
+}
+
+.final-cta h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.final-cta p {
+  font-size: 17px;
+  margin-bottom: 28px;
+  opacity: 0.92;
+}
+
+.final-cta__actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.final-cta__phone {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.final-cta__phone a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.final-cta .btn {
+  padding: 14px 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background 0.2s ease, color 0.2s ease, filter 0.2s ease;
+}
+
+.final-cta .btn--primary:hover {
+  opacity: 1;
+  filter: brightness(0.92);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.final-cta .btn--outline {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.final-cta .btn--outline:hover {
+  background: #fff;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
 /* =============================
@@ -577,8 +698,32 @@ h2 {
   }
 
   .header__content {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
+  }
+
+  .header .logo {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .hero__logo {
+    width: 150px;
+    height: 42px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .header__phone {
+    display: inline-flex;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .header__phone iconify-icon {
+    font-size: 16px;
   }
 
   .nav {
@@ -586,7 +731,7 @@ h2 {
   }
 
   .hero {
-    padding: 35px 0;
+    padding: 28px 0;
   }
 
   .hero__actions {
@@ -595,17 +740,32 @@ h2 {
   }
 
   .hero__content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
+    gap: 22px;
   }
 
   .hero__text h1 {
-    font-size: 32px;
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .hero__eyebrow {
+    font-size: 12px;
+    margin-bottom: 14px;
   }
 
   .hero__image img {
-    max-height: 220px;
+    max-height: 180px;
+    width: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 
   .benefits,
@@ -635,39 +795,3 @@ h2 {
   }
 }
 
-/* =============================
-   THANK YOU PAGE
-============================= */
-
-.thankyou {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.thankyou__content {
-  max-width: 650px;
-}
-
-.thankyou h1 {
-  color: var(--primary);
-  font-size: 34px;
-  margin-bottom: 25px;
-}
-
-.thankyou p {
-  margin-bottom: 18px;
-  font-size: 16px;
-}
-
-.thankyou__extra {
-  margin-top: 10px;
-  color: #666;
-}
-
-.thankyou .btn {
-  margin-top: 15px;
-}

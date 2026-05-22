@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="preload" as="image" href="assets/images/hero-fabrica.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://seudominio.com.br/" />
     <meta name="robots" content="index, follow" />
-    <title>Esel Mangueiras | Indústria de Mangueiras em Londrina PR</title>
+    <title>Mangueira de Polietileno e Corrugada Amarela em Londrina PR | Esel</title>
     <meta
       name="description"
-      content="Indústria de mangueiras em Londrina PR com produção própria. Fornecimento para empresas, revendedores e profissionais em toda região norte do Paraná."
+      content="Indústria de mangueiras de polietileno e mangueira corrugada amarela em Londrina PR. Produção própria para empresas, revendedores e profissionais — linha agrícola, elétrica, construção e industrial."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -80,6 +79,11 @@
         </nav>
 
         <a href="#formulario" class="btn btn--primary">Solicitar Informações</a>
+
+        <a href="tel:+5543996740504" class="header__phone">
+          <iconify-icon icon="mdi:phone"></iconify-icon>
+          (43) 99674-0504
+        </a>
       </div>
     </header>
 
@@ -88,14 +92,17 @@
       <section class="hero">
         <div class="container hero__content">
           <div class="hero__text">
+            <span class="hero__eyebrow">Polietileno · Corrugada Amarela</span>
+
             <h1>
-              Indústria de Mangueiras em Londrina <br />
-              Fornecimento para Empresas, Revendedores e Profissionais da Região
+              Mangueira de Polietileno e Corrugada Amarela em Londrina <br />
+              Direto da Fábrica para Empresas, Revendedores e Profissionais
             </h1>
 
             <p class="hero__subtitle">
-              Produção própria e linha completa de mangueiras para aplicações
-              industriais, agrícolas, elétricas e de construção.
+              Produção própria de mangueiras de polietileno e mangueira
+              corrugada amarela para aplicações agrícolas, elétricas, de
+              construção e industriais.
             </p>
 
             <div class="hero__actions">
@@ -129,11 +136,12 @@
 
       <!-- SEO -->
       <section class="seo-block">
-        <h2>Indústria de Mangueiras em Londrina com Atendimento Regional</h2>
+        <h2>Indústria de Mangueira de Polietileno e Corrugada Amarela em Londrina</h2>
 
         <p>
-          A Esel atende empresas, distribuidores e profissionais em diversas
-          cidades da região norte do Paraná.
+          A Esel produz mangueiras de polietileno e mangueira corrugada amarela
+          em fábrica própria em Londrina e atende empresas, distribuidores e
+          profissionais em diversas cidades da região norte do Paraná.
         </p>
       </section>
 
@@ -265,28 +273,25 @@
             id="leadForm"
             name="lead-form"
             class="lead-form"
-            action="https://formsubmit.co/Esel@sercomtel.com.br"
+            action="https://formsubmit.co/ajax/Esel@sercomtel.com.br"
             method="POST"
           >
-            <input
-              type="hidden"
-              name="_next"
-              value="https://seudominio.com.br/obrigado.html"
-            />
             <input type="hidden" name="_captcha" value="false" />
 
             <div class="form-group">
-              <label for="empresa">Nome da Empresa</label>
+              <label for="empresa">Nome ou Empresa</label>
               <input type="text" id="empresa" name="empresa" required />
             </div>
 
             <div class="form-group">
-              <label for="cnpj-principal">CNPJ (se empresa)</label>
+              <label for="telefone-principal">WhatsApp</label>
               <input
-                type="text"
-                id="cnpj-principal"
-                name="cnpj"
-                class="cnpj-field"
+                type="tel"
+                id="telefone-principal"
+                name="telefone"
+                class="phone-field"
+                placeholder="(00) 00000-0000"
+                required
               />
             </div>
 
@@ -296,46 +301,36 @@
             </div>
 
             <div class="form-group">
-              <label for="segmento">Segmento</label>
-              <select id="segmento" name="segmento" required>
-                <option value="">Selecione</option>
-                <option>Loja de Material de Construção</option>
-                <option>Casa Agrícola</option>
-                <option>Loja de Material Elétrico</option>
-                <option>Distribuidor Regional</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="telefone-principal">Telefone / WhatsApp</label>
-              <input
-                type="tel"
-                id="telefone-principal"
-                name="telefone"
-                class="phone-field"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="volume">Volume estimado (opcional)</label>
-              <input
-                type="text"
-                id="volume"
-                name="volume"
-                placeholder="Ex: R$ 5.000 - R$ 10.000"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="mensagem">O que você precisa?</label>
-              <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+              <label for="mensagem">O que você precisa? (opcional)</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="3"
+                placeholder="Ex: mangueira corrugada amarela 3/4, 200 metros"
+              ></textarea>
             </div>
 
             <button type="submit" class="btn btn--primary btn--full">
-              Solicitar Tabela e Condições Comerciais
+              Solicitar Tabela e Cotação
             </button>
           </form>
+
+          <div class="lead-form__success" hidden role="status" aria-live="polite">
+            <h3>Solicitação Recebida com Sucesso</h3>
+            <p>
+              Nossa equipe comercial analisará as informações e entrará em
+              contato em breve.
+            </p>
+            <p>Se preferir, fale agora pelo WhatsApp:</p>
+            <a
+              href="https://wa.me/5543996740504?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20informações"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
@@ -343,9 +338,10 @@
       <section id="produtos" class="products">
         <div class="container">
           <div class="section-header">
-            <h2>Linha Completa para Diferentes Segmentos</h2>
+            <h2>Linha Completa de Mangueiras de Polietileno e Corrugada Amarela</h2>
             <p>
-              Produtos organizados por aplicação para facilitar reposição e
+              Produção própria de mangueira de polietileno e mangueira corrugada
+              amarela, organizada por aplicação para facilitar reposição e
               padronização no abastecimento.
             </p>
           </div>
@@ -354,39 +350,40 @@
             <div class="product-card">
               <h3>Linha Construção</h3>
               <p>
-                Mangueiras indicadas para uso em obras, reformas e aplicações
-                gerais.
+                Mangueiras de polietileno para uso em obras, reformas e
+                aplicações gerais.
               </p>
             </div>
 
             <div class="product-card">
               <h3>Linha Agrícola</h3>
               <p>
-                Produtos desenvolvidos para aplicações rurais e sistemas de
-                irrigação.
+                Mangueiras de polietileno desenvolvidas para aplicações rurais
+                e sistemas de irrigação.
               </p>
             </div>
 
             <div class="product-card">
-              <h3>Linha Elétrica</h3>
+              <h3>Linha Elétrica — Corrugada Amarela</h3>
               <p>
-                Modelos específicos para instalações elétricas e proteção
-                técnica.
+                Mangueira corrugada amarela para instalações elétricas e
+                proteção de cabeamento, com padrão técnico de fábrica.
               </p>
             </div>
 
             <div class="product-card">
               <h3>Linha Industrial</h3>
               <p>
-                Soluções voltadas para demandas técnicas e uso profissional.
+                Mangueiras de polietileno voltadas para demandas técnicas e uso
+                profissional.
               </p>
             </div>
 
             <div class="product-card">
               <h3>Linha Sob Medida</h3>
               <p>
-                Produção personalizada conforme necessidade específica do
-                cliente.
+                Produção personalizada de mangueiras de polietileno conforme
+                necessidade específica do cliente.
               </p>
             </div>
           </div>
@@ -461,86 +458,33 @@
         </div>
       </section>
 
-      <!-- FORMULÁRIO FINAL -->
-      <section class="form-section form-section--final">
-        <div class="container">
-          <div class="section-header">
-            <h2>Solicite Informações Comerciais</h2>
-            <p>
-              Preencha os dados abaixo e receba informações comerciais e
-              condições de fornecimento.
-            </p>
+      <!-- CTA FINAL -->
+      <section class="final-cta">
+        <div class="container final-cta__content">
+          <h2>Fale Agora com Nosso Comercial</h2>
+          <p>
+            Atendimento rápido pelo WhatsApp para empresas, revendedores e
+            profissionais da região.
+          </p>
+
+          <div class="final-cta__actions">
+            <a
+              href="https://wa.me/5543996740504?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20informações"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary"
+            >
+              Falar no WhatsApp
+            </a>
+
+            <a href="#formulario" class="btn btn--outline">
+              Solicitar Tabela
+            </a>
           </div>
 
-          <form
-            name="lead-form-final"
-            class="lead-form"
-            action="https://formsubmit.co/Esel@sercomtel.com.br"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="_next"
-              value="https://seudominio.com.br/obrigado.html"
-            />
-            <input type="hidden" name="_captcha" value="false" />
-
-            <div class="form-group">
-              <label for="empresa-final">Nome da Empresa</label>
-              <input type="text" id="empresa-final" name="empresa" required />
-            </div>
-
-            <div class="form-group">
-              <label for="cnpj-final">CNPJ (se empresa)</label>
-              <input
-                type="text"
-                id="cnpj-final"
-                name="cnpj"
-                class="cnpj-field"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="cidade-final">Cidade</label>
-              <input type="text" id="cidade-final" name="cidade" required />
-            </div>
-
-            <div class="form-group">
-              <label for="segmento-final">Segmento</label>
-              <select id="segmento-final" name="segmento" required>
-                <option value="">Selecione</option>
-                <option>Loja de Material de Construção</option>
-                <option>Casa Agrícola</option>
-                <option>Loja de Material Elétrico</option>
-                <option>Distribuidor Regional</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="telefone-final">Telefone / WhatsApp</label>
-              <input
-                type="tel"
-                id="telefone-final"
-                name="telefone"
-                class="phone-field"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label>Volume estimado (opcional)</label>
-              <input type="text" name="volume" />
-            </div>
-
-            <div class="form-group">
-              <label for="mensagem-final">O que você precisa?</label>
-              <textarea id="mensagem-final" name="mensagem" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary btn--full">
-              Solicitar Informações Comerciais
-            </button>
-          </form>
+          <p class="final-cta__phone">
+            Ou ligue: <a href="tel:+5543996740504">(43) 99674-0504</a>
+          </p>
         </div>
       </section>
     </main>
@@ -551,15 +495,16 @@
         <div class="footer__col">
           <h3>Esel Indústria e Comércio</h3>
           <p>
-            Indústria de mangueiras em Londrina PR com produção própria,
-            fornecendo para empresas e profissionais em todo o norte do Paraná.
+            Indústria de mangueiras de polietileno e mangueira corrugada amarela
+            em Londrina PR com produção própria, fornecendo para empresas e
+            profissionais em todo o norte do Paraná.
           </p>
         </div>
 
         <div class="footer__col">
           <h4>Contato Comercial</h4>
-          <p>Telefone: (43) 99674-0504</p>
-          <p>Email: Esel@sercomtel.com.br</p>
+          <p>Telefone: <a href="tel:+5543996740504">(43) 99674-0504</a></p>
+          <p>Email: <a href="mailto:Esel@sercomtel.com.br">Esel@sercomtel.com.br</a></p>
           <p>Londrina - PR</p>
         </div>
 
